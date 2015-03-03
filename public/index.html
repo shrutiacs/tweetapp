@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> The Mean Stack Demo</title>
+<link href="css/coda-slider.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="features/services/controller.js"></script> 
+</head>
+<body ng-app="">
+    <div style=" margin-left: auto; margin-right: auto; width: 50%; " ng-controller="Tweet">
+    <div class="container">
+ 	<h1 style="color:teal">{{message}} </h1>
+ 	
+ 	<table class="table">
+ 		<thead>
+  			<tr>
+    			<th>Tweets</th>
+    			
+			</tr>
+			
+ 		</thead>
+ 		<tbody>
+     		<tr ng-repeat="tweet in data">
+     			<td>
+     				{{tweet[1].text}}
+     			</td>
+        </tr>	
+ 		</tbody>	
+</div>
+ </body> 
+</html> 
